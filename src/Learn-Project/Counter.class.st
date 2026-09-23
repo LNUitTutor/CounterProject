@@ -29,6 +29,21 @@ Counter >> count: anInteger [
 	count := anInteger
 ]
 
+{ #category : 'actions' }
+Counter >> decrement [
+
+	self count == 0 ifTrue: [
+		self error: 'Can not decrease zero-counter' ].
+	self count: self count - 1
+]
+
+{ #category : 'actions' }
+Counter >> increment [
+
+	count := count + 1
+	"self count: self count + 1"
+]
+
 { #category : 'initialization' }
 Counter >> initialize [
 
