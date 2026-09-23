@@ -1,8 +1,9 @@
 Class {
 	#name : 'CounterTest',
 	#superclass : 'TestCase',
-	#category : 'Learn-Project',
-	#package : 'Learn-Project'
+	#category : 'Learn-Project-Counter',
+	#package : 'Learn-Project',
+	#tag : 'Counter'
 }
 
 { #category : 'tests' }
