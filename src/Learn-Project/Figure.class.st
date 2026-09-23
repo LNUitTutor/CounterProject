@@ -6,10 +6,21 @@ Class {
 	#tag : 'Figures'
 }
 
+{ #category : 'comparing' }
+Figure >> > aFigure [
+
+	^ self area > aFigure area
+]
+
 { #category : 'calculating' }
 Figure >> area [
 
 	^ self subclassResponsibility
+]
+
+{ #category : 'accessing' }
+Figure >> max: aFigure [ 
+	self > aFigure ifTrue: [ ^self ] ifFalse: [ ^ aFigure ] 
 ]
 
 { #category : 'calculating' }

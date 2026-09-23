@@ -15,6 +15,12 @@ FCircle >> area [
 	^ Float pi * r squared 
 ]
 
+{ #category : 'initialization' }
+FCircle >> initialize [
+
+	r := 1
+]
+
 { #category : 'calculating' }
 FCircle >> perimeter [
 
