@@ -10,6 +10,18 @@ Class {
 	#tag : 'Figures'
 }
 
+{ #category : 'constants' }
+Figure class >> minimalSize [
+
+	^ 0.1
+]
+
+{ #category : 'comparing' }
+Figure >> < aFigure [
+
+	^ aFigure > self
+]
+
 { #category : 'comparing' }
 Figure >> > aFigure [
 

@@ -14,12 +14,6 @@ Class {
 	#tag : 'Figures'
 }
 
-{ #category : 'constants' }
-FRectangle class >> minimalSize [
-
-	^ 0.1
-]
-
 { #category : 'instance creation' }
 FRectangle class >> newA: length andB: width [ 
 	| r |

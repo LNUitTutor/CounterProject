@@ -16,6 +16,12 @@ FSquare class >> minimalSize [
 	^ 0.5
 ]
 
+{ #category : 'instance creation' }
+FSquare class >> new: aSide [
+
+	^ self basicNew r: aSide 
+]
+
 { #category : 'initialization' }
 FSquare >> a: anInteger [
 

@@ -13,6 +13,12 @@ Class {
 	#tag : 'Figures'
 }
 
+{ #category : 'instance creation' }
+FCircle class >> new: aRadius [
+
+	^ self basicNew r: aRadius
+]
+
 { #category : 'calculating' }
 FCircle >> area [
 
@@ -38,4 +44,16 @@ FCircle >> printOn: aStream [
 		nextPutAll: 'Circle(';
 		print: r;
 		nextPut: $)
+]
+
+{ #category : 'accessing' }
+FCircle >> r [
+
+	^ r
+]
+
+{ #category : 'accessing' }
+FCircle >> r: aNumber [
+
+	r := aNumber max: self class minimalSize 
 ]
