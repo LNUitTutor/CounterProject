@@ -6,6 +6,13 @@ Class {
 	#tag : 'Counter-GUI'
 }
 
+{ #category : 'running' }
+CounterApplication class >> run [
+
+	<script>
+	self new run
+]
+
 { #category : 'initialization' }
 CounterApplication >> initialize [
 
